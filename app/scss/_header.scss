@@ -1,0 +1,35 @@
+.logo {
+    background-image: url();
+}
+
+// Mobile
+.mobile {
+    &_hamburger {
+        width: 2rem;
+        height: 2rem;
+        padding: .01rem;
+        border: 1px $dark_blue solid;
+
+        span {
+            display: block;
+            height: 2px;
+            width: 80%;
+            background-color: $dark_blue;
+        }
+    }
+
+    &_nav {
+        &_close {
+
+        }
+
+        &_item {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// Desktop

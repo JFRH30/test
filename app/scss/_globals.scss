@@ -1,0 +1,47 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+// Flexbox
+.flex {
+    display: flex;
+
+    // direction
+    &-d-col {
+        flex-direction: column;
+    }
+
+    &-d-row {
+        flex-direction: row;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-jc-se {
+        justify-content: space-evenly;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+
+    &-ac-sa {
+        align-content: space-around;
+    }
+}
+
+// Cursor
+.pointer {
+    cursor: pointer;
+}
