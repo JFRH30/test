@@ -1,9 +1,13 @@
 .logo {
-    background-image: url();
+    display: inline-block;
+    img {
+        height: 2.875rem;
+    }
 }
 
 // Mobile
 .mobile {
+    position: relative;
     &_hamburger {
         width: 2rem;
         height: 2rem;
@@ -19,17 +23,56 @@
     }
 
     &_nav {
-        &_close {
+        background-color: $dark_blue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
 
+        &_close {
+            position: relative;
+            width: 2rem;
+            height: 2rem;
+            margin-bottom: 0.5rem;
+            border: 1px $white solid;
+
+            span {
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $white;
+            
+                &.line1 {
+                    transform: rotate(45deg);
+                }
+    
+                &.line2 {
+                    transform: rotate(-45deg);
+                }
+            }
         }
 
         &_item {
+            background-color: transparentize($color: $white, $amount: .5);
             list-style-type: none;
+            margin-bottom: 0.5rem;
+            padding: 1rem 1.5rem;
             a {
+                color: $white;
                 text-decoration: none;
+                text-transform: uppercase;
             }
         }
     }
 }
 
-// Desktop
+.line {
+    background-color: $dark_blue;
+    height: 5px;
+}
+
+// Desktop.

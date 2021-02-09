@@ -11,18 +11,19 @@
 
 <body>
     <header>
-        <nav>
-            <div class="flex flex-d-col flex-jc-se flex-ai-c pointer mobile_hamburger">
+        <nav class="flex flex-ai-c p-3 mobile">
+            <div class="flex flex-d-col flex-jc-se flex-ai-c pointer mobile_hamburger m-l-1">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
 
             <div class="mobile_nav hidden">
-                <div class="mobile_nav_close">
-                    <span></span>
-                    <span></span>
+                <div class="pointer mobile_nav_close">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
                 </div>
+
                 <ul>
                     <li class="mobile_nav_item">
                         <a href="#">first link</a>
@@ -43,10 +44,37 @@
                         <a href="#">sixth link</a>
                     </li>
                 </ul>
+            </div>
 
+            <div class="m-l-auto m-r-auto logo">
+                <img src="app/images/logo.png" alt="Logo">
             </div>
         </nav>
+        <div class="line"></div>
     </header>
+
+    <section class="slider-container">
+        <div class="slider-item">
+            <img src="app/images/city.jpg" alt="Image 1">
+        </div>
+        <div class="slider-item">
+            <img src="app/images/city2.jpg" alt="Image 2">
+        </div>
+        <div class="slider-item">
+            <img src="app/images/city3.jpg" alt="Image 3">
+        </div>
+
+        <a class="prev" onclick="slideControl(-1)">&#9664;</a>
+        <a class="next" onclick="slideControl(1)">&#9654;</a>
+
+        <div class="indicator">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+
     <script src="app/js/script.js"></script>
 </body>
 
